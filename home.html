@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>توثيق التراث السوداني - الصفحة الرئيسية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box; font-family:'Cairo', sans-serif;}
+    body {background:linear-gradient(180deg,#fdf6ec,#fff); color:#4a3c31; line-height:1.6;}
+    header {position:fixed; top:0; right:0; left:0; background:linear-gradient(90deg,#8b0000,#a0522d); color:#fff; display:flex; align-items:center; justify-content:space-between; padding:0 1rem; height:64px; box-shadow:0 2px 8px rgba(0,0,0,0.15); z-index:10;}
+    header h1 {font-size:1.4rem;}
+    nav ul {display:flex; list-style:none; gap:1rem;}
+    nav a {color:#fff; text-decoration:none; padding:6px 12px; border-radius:8px; transition:background 0.3s ease; font-weight:600;}
+    nav a:hover, nav a.active {background:rgba(255,255,255,0.2);}
+    main {margin-top:80px; padding:2rem;}
+    .hero {background:url('https://upload.wikimedia.org/wikipedia/commons/2/2f/Sudan_landscape.jpg') center/cover no-repeat; height:80vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; color:#fff; text-shadow:1px 1px 5px rgba(0,0,0,0.6); padding:1rem; border-radius:16px;}
+    .hero h1 {font-size:2.5rem; margin-bottom:1rem;}
+    .hero p {font-size:1.2rem; max-width:700px; margin-bottom:1.5rem;}
+    .btn-cta {background:#7d3f1f; color:#fff; padding:0.8rem 1.6rem; border:none; border-radius:30px; font-size:1.1rem; font-weight:bold; cursor:pointer; transition:all 0.3s ease;}
+    .btn-cta:hover {background:#a0522d; transform:translateY(-2px);}
+    .grid {display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:20px; margin-top:2rem;}
+    .card {background:#fff; border-radius:14px; box-shadow:0 6px 18px rgba(0,0,0,0.08); overflow:hidden; transition:transform 0.3s ease, box-shadow 0.3s ease;}
+    .card:hover {transform:translateY(-5px); box-shadow:0 10px 25px rgba(0,0,0,0.15);}
+    .thumb img {width:100%; height:200px; object-fit:cover; transition:transform 0.4s ease;}
+    .card:hover .thumb img {transform:scale(1.05);}
+    .meta {padding:12px 16px;}
+    .meta .title {font-weight:700; margin-bottom:6px; color:#7d3f1f;}
+    .meta .desc {font-size:0.95rem; color:#5a4637;}
+    .tags {display:flex; gap:8px; flex-wrap:wrap; padding:10px 16px; border-top:1px solid #eee; background:rgba(125,63,31,0.05);}
+    .tag {background:#fff; border:1px solid #7d3f1f; color:#7d3f1f; padding:4px 10px; border-radius:999px; font-size:0.8rem; font-weight:600;}
+    .intro, .cta {max-width:800px; margin:3rem auto; text-align:center;}
+    .cta ul {list-style:disc; text-align:right; padding:1rem 2rem;}
+    .youtube-link {text-align:center; margin-top:2rem;}
+    .youtube-link a {display:inline-block; padding:0.5rem 1rem; border-radius:20px; border:2px solid #7d3f1f; color:#7d3f1f; font-weight:600; text-decoration:none; transition:all 0.3s ease;}
+    .youtube-link a:hover {background:#7d3f1f; color:#fff;}
+    .scroll-buttons {position:fixed; bottom:20px; left:20px; display:flex; flex-direction:column; gap:8px;}
+    .scroll-buttons button {background:#a0522d; color:#fff; border:none; padding:8px 12px; border-radius:8px; cursor:pointer; font-weight:600; transition:background 0.3s ease;}
+    .scroll-buttons button:hover {background:#7d3f1f;}
+    footer {background:#7d3f1f; color:#fff; text-align:center; padding:1rem; margin-top:2rem; border-radius:12px 12px 0 0;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>توثيق التراث السوداني</h1>
+    <nav>
+      <ul>
+        <li><a href="/home.html" class="active">الرئيسية</a></li>
+        <li><a href="/about.html">عن المشروع</a></li>
+        <li><a href="/index.html">التراث المادي</a></li>
+        <li><a href="/index.html">التراث اللامادي</a></li>
+        <li><a href="/gallery.html">المعرض</a></li>
+        <li><a href="/contact.html">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>مرحبا بكم في موقعنا الجميل</h1>
+      <p>هنا ستتعلمون أكثر عن ثقافة الشعب السوداني الحبيب والملئ بالعجائب</p>
+      <button class="btn-cta">ابدأ الآن</button>
+    </section>
+    <section class="grid">
+      <article class="card"><div class="thumb"><img src="https://pub-a0fe29ed512a454eb858af73b205c8eb.r2.dev/storage/thumbs/39/thumb744.jpg" alt="منظر طبيعي سوداني"></div><div class="meta"><div class="title">سهل النيل</div><div class="desc">منظر طبيعي في ضفاف النيل.</div></div><div class="tags"><span class="tag">طبيعة</span><span class="tag">سودان</span></div></article>
+      <article class="card"><div class="thumb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjxL0pxOwJXH10zSaJALuip03zOz7iVWnLng&s" alt="صورة تراثية"></div><div class="meta"><div class="title">فن تقليدي</div><div class="desc">عادات وتراث محفوظة بعناية.</div></div><div class="tags"><span class="tag">تراث</span><span class="tag">ثقافة</span></div></article>
+      <article class="card"><div class="thumb"><img src="https://www.aljazeera.net/wp-content/uploads/2011/05/7adba9f0-a8d0-42eb-bda3-161bde554833.jpeg?resize=375%2C250&quality=80" alt="مشهد سوق"></div><div class="meta"><div class="title">سوق محلي</div><div class="desc">ألوان وتفاصيل من الأسواق الشعبية.</div></div><div class="tags"><span class="tag">مجتمع</span><span class="tag">أكل</span></div></article>
+      <article class="card"><div class="thumb"><img src="https://static.africa-press.net/sudan/sites/10/2022/06/img-629b9439c47dc.jpg" alt="عمارة قديمة"></div><div class="meta"><div class="title">عمارة تراثية</div><div class="desc">واجهات مباني تاريخية.</div></div><div class="tags"><span class="tag">هندسة</span><span class="tag">تاريخ</span></div></article>
+    </section>
+    <section class="intro"><h2>عن المشروع</h2><p>نهدف في هذا الموقع إلى توثيق الثقافة السودانية المادية واللامادية بمصادر دقيقة، وعرضها للعالم.</p></section>
+    <section class="cta"><h3>استكشف الموقع:</h3><ul><li>عن المشروع</li><li>التراث المادي</li><li>التراث اللامادي</li><li>المعرض</li><li>تواصل معنا</li></ul></section>
+    <div class="youtube-link"><a href="https://youtube.com/@mousabramadan4835" target="_blank">شاهد قناة مصعب رمضان</a></div>
+  </main>
+  <div class="scroll-buttons"><button onclick="window.scrollTo({top:0,behavior:'smooth'})">⬆ لأعلى</button><button onclick="window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'})">⬇ لأسفل</button></div>
+  <footer>© 2025 توثيق التراث السوداني. جميع الحقوق محفوظة.</footer>
+</body>
+</html>
