@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل معنا - توثيق التراث السوداني</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0; padding:0; box-sizing:border-box; font-family:'Cairo', sans-serif;}
+    body{background:linear-gradient(180deg,#fdfaf6,#fff); color:#222; line-height:1.8;}
+    header{background:linear-gradient(90deg,#8b0000,#a0522d); color:#fff; padding:1rem; text-align:center; box-shadow:0 2px 8px rgba(0,0,0,0.15);}
+    nav ul{display:flex; justify-content:center; gap:1rem; list-style:none; margin-top:0.5rem;}
+    nav a{color:#fff; padding:0.5rem 1rem; border-radius:8px; text-decoration:none; transition:background 0.3s ease;}
+    nav a.active, nav a:hover{background:rgba(255,255,255,0.2);}
+    main{padding:2rem;}
+    section{margin-bottom:2rem;}
+    .contact-intro, .contact-form-section, .contact-info{background:#fff; padding:2rem; max-width:700px; margin:2rem auto; border-radius:12px; box-shadow:0 4px 16px rgba(0,0,0,0.08);}
+    .contact-form{display:flex; flex-direction:column; gap:1rem;}
+    .contact-form label{font-weight:600; color:#7d3f1f;}
+    .contact-form input, .contact-form textarea{padding:0.8rem; font-size:1rem; border:1px solid #ccc; border-radius:8px; transition:border-color 0.3s ease, box-shadow 0.3s ease;}
+    .contact-form input:focus, .contact-form textarea:focus{border-color:#8b0000; box-shadow:0 0 0 3px rgba(139,0,0,0.1); outline:none;}
+    .contact-form button{background:#8b0000; color:#fff; border:none; padding:0.8rem 1.5rem; border-radius:8px; font-weight:700; cursor:pointer; transition:background 0.3s ease, transform 0.2s ease;}
+    .contact-form button:hover{background:#a0522d; transform:translateY(-2px);}
+    .contact-info a{color:#8b0000; text-decoration:none; font-weight:600;}
+    .contact-info a:hover{text-decoration:underline;}
+    footer{background:#7d3f1f; color:#fff; text-align:center; padding:1rem; margin-top:2rem; border-radius:12px 12px 0 0;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>تواصل معنا</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">عن المشروع</a></li>
+        <li><a href="index.html">التراث المادي</a></li>
+        <li><a href="index.html">التراث اللامادي</a></li>
+        <li><a href="gallery.html">معرض الصور</a></li>
+        <li><a href="contact.html" class="active">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="contact-intro">
+      <h2>نحن هنا من أجلك!</h2>
+      <p>إذا كانت لديك أي اقتراحات، استفسارات، أو ترغب بالمساهمة في المشروع، لا تتردد في التواصل معنا عبر النموذج التالي أو وسائل الاتصال الأخرى.</p>
+    </section>
+    <section class="contact-form-section">
+      <form class="contact-form" action="#" method="post">
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">رسالتك:</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+        <button type="submit">إرسال</button>
+      </form>
+    </section>
+    <section class="contact-info">
+      <h2>معلومات التواصل</h2>
+      <p><strong>البريد الإلكتروني:</strong> heritage@sudan.org</p>
+      <p><strong>فيسبوك:</strong> <a href="#">facebook.com/sudan.heritage</a></p>
+      <p><strong>إنستغرام:</strong> <a href="#">@sudan.heritage</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 موقع توثيق التراث السوداني. جميع الحقوق محفوظة.</p>
+  </footer>
+</body>
+</html>
