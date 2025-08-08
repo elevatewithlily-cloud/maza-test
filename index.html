@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>توثيق التراث السوداني</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fdfaf5;
+      color: #3a2d1f;
+      line-height: 1.6;
+    }
+    nav {
+      background: linear-gradient(90deg, #8b0000, #a52a2a);
+      color: #fff;
+      padding: 12px 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    nav li {
+      padding: 8px 16px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 600;
+    }
+    nav li:hover {
+      background: rgba(255,255,255,0.25);
+      transform: translateY(-2px);
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #8b0000;
+    }
+    p {
+      font-size: 1rem;
+      color: #5a4637;
+    }
+    .page {
+      display: none;
+      padding: 24px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    .page.active {
+      display: block;
+      animation: fadeIn 0.6s ease;
+    }
+    .page img {
+      width: 90%;
+      max-width: 600px;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+      margin-top: 18px;
+      transition: transform 0.4s ease;
+    }
+    .page img:hover {
+      transform: scale(1.03);
+    }
+    form {
+      background: #faf4ef;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    form input, form textarea {
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: inherit;
+    }
+    form button {
+      padding: 10px 24px;
+      background-color: #8b0000;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    form button:hover {
+      background-color: #a52a2a;
+      transform: translateY(-2px);
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li onclick="showPage('home')">الرئيسية</li>
+      <li onclick="showPage('about')">عن المشروع</li>
+      <li onclick="showPage('tangible')">التراث المادي</li>
+      <li onclick="showPage('intangible')">التراث اللامادي</li>
+      <li onclick="showPage('gallery')">معرض الصور</li>
+      <li onclick="showPage('contact')">اتصل بنا</li>
+    </ul>
+  </nav>
+
+  <section id="home" class="page active">
+    <h1>مرحبًا بكم في موقع توثيق التراث السوداني</h1>
+    <p>من هنا نحتفظ بكنوز ثقافتنا وهويتنا للأجيال القادمة.</p>
+    <img src="https://vid.alarabiya.net/images/2022/01/30/f308032a-081d-49a5-840a-bfa68556d6ed/f308032a-081d-49a5-840a-bfa68556d6ed_16x9_1200x676.jpg?width=1120&format=jpg" alt="رقصة سودانية تقليدية">
+  </section>
+
+  <section id="about" class="page">
+    <h1>عن المشروع</h1>
+    <p>هذا المشروع تم إنشاؤه بواسطة فريق مكون من 6 أفراد لتوثيق التراث السوداني الغني والمتنوع.</p>
+    <img src="https://www.independentarabia.com/sites/default/files/styles/1368x911/public/article/mainimage/2022/11/21/652026-1546580949.jpg" alt="التراث المادي">
+  </section>
+
+  <section id="tangible" class="page">
+    <h1>التراث المادي</h1>
+    <p>يشمل المعمار التقليدي، الأدوات، الأزياء، والأسواق الشعبية.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjxL0pxOwJXH10zSaJALuip03zOz7iVWnLng&s" alt="التراث المادي">
+  </section>
+
+  <section id="intangible" class="page">
+    <h1>التراث اللامادي</h1>
+    <p>يشمل الحكايات الشعبية، الرقصات، الأغاني، والعادات.</p>
+    <img src="https://pub-a0fe29ed512a454eb858af73b205c8eb.r2.dev/storage/thumbs/39/thumb744.jpg" alt="التراث اللامادي">
+  </section>
+
+  <section id="gallery" class="page">
+    <h1>معرض الصور</h1>
+    <p>صور من التراث السوداني الجميل.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyqnAKr3P5r2u_RsLIviLt4j5Xa0wBji64_Q&s" alt="صورة من التراث">
+  </section>
+
+  <section id="contact" class="page" style="padding: 1rem;">
+    <h1>اتصل بنا</h1>
+    <form style="padding: 50px;">
+      <label>الاسم:</label>
+      <input type="text" name="name">
+      <label>البريد الإلكتروني:</label>
+      <input type="email" name="email">
+      <label>الرسالة:</label>
+      <textarea name="message" rows="5"></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
+
+  <script>
+    function showPage(pageId) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
